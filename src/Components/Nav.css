@@ -1,0 +1,27 @@
+.img{
+    width: 300px;
+}
+.nav-item 
+{
+    margin-left: 100px;
+}
+.nav-item a{
+    color:blue;
+    position: relative;
+}
+.nav-item a:hover{
+    color: black;
+}
+.nav-item a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -7px;
+    background-color: #367cff;
+    transition: 0.3s ease;
+}
+.nav-item a:hover::before{
+    width: 100%;
+}
